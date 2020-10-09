@@ -117,8 +117,16 @@
               "devServerTarget": "antonellozitelli:serve:production"
             }
           }
+        },
+        "deploy": {
+          "builder": "angular-cli-ghpages:deploy",
+          "options": {}
         }
       }
-    }},
-  "defaultProject": "antonellozitelli"
+    }
+  },
+  "defaultProject": "antonellozitelli",
+  "cli": {
+    "analytics": false
+  }
 }
