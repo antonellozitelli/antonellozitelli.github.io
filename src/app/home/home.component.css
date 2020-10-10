@@ -1,3 +1,19 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/roboto_regular/Roboto-Regular-webfont.woff")
+    format("woff");
+  font-weight: normal;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "Roboto";
+  src: url("../../assets/fonts/roboto_bold/Roboto-Bold-webfont.woff")
+    format("woff");
+  font-weight: bold;
+  font-style: bold;
+}
+
 .about {
   background-image: url("../../assets/images/background.jpg");
   background-repeat: no-repeat;
