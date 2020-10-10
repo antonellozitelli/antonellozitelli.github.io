@@ -14,21 +14,39 @@
   font-style: bold;
 }
 
+#home-logo {
+  width: 5%;
+  height: auto;
+  padding-right: 1%;
+}
+
+#home-title {
+  font-size: 32pt;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #297f00;
+}
+
 .about {
-  background-image: url("../../assets/images/background.jpg");
+  background-image: url("../../assets/images/about-background.jpg");
+  background-position: center;
   background-repeat: no-repeat;
+  background-size: cover;
   padding-bottom: 4%;
 }
 
 .about-textbox {
-  font-size: 22pt;
+  background-color: rgb(241, 237, 237);
+  font-size: 20pt;
   font-family: Roboto;
   font-weight: normal;
   color: black;
 }
 
 .work {
-  background-image: url("../../assets/images/agreement.jpg");
+  background-image: url("../../assets/images/work-background.jpg");
+  background-position: center;
   background-size: cover;
   padding: 10%;
 }
@@ -36,14 +54,14 @@
 .work-textbox {
   background-color: #0089f3;
   background-size: cover;
-  font-size: 22pt;
+  font-size: 20pt;
   font-family: Roboto;
   font-weight: normal;
   padding: 1.5%;
 }
 
 .shortcut {
-  background-color: rgb(236, 233, 233);
+  background-color: rgb(241, 237, 237);
   background-size: cover;
   padding: 5%;
 }
@@ -70,7 +88,7 @@
 .contact-container {
   background-color: #7dbec5;
   background-size: cover;
-  font-size: 22pt;
+  font-size: 20pt;
   font-family: Roboto;
   font-weight: normal;
   padding: 1.5%;
@@ -80,16 +98,27 @@
   padding-bottom: 1.5%;
 }
 
-#home-logo {
-  width: 5%;
-  height: auto;
+.phrase-container {
+  width: 60%;
+  margin: 0 auto;
+  position: relative;
 }
 
-#home-title {
+#phrase {
   font-size: 30pt;
-  font-family: Roboto;
-  font-weight: bold;
-  color: black;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #297f00;
+}
+
+#signature {
+  font-size: 26pt;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #297f00;
+  margin-top: -1%;
 }
 
 #button {
@@ -145,13 +174,13 @@
 }
 
 #avatar {
+  padding-top: 12%;
   width: 16%;
   height: auto;
 }
 
 #title-about {
-  padding-top: 2%;
-  padding-bottom: 1.5%;
+  margin-bottom: -1.5%;
   font-size: 40pt;
   font-family: Roboto;
   font-weight: bold;
@@ -242,6 +271,14 @@
   #avatar {
     width: 35%;
     height: auto;
+  }
+
+  #phrase {
+    font-size: 7vw;
+  }
+
+  #signature {
+    font-size: 7vw;
   }
 
   #footer-text {

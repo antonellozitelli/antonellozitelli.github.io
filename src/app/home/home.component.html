@@ -1,5 +1,5 @@
 <section>
-    <div fxLayout="row" fxHide.lt-sm="true" fxLayoutAlign="center center">
+    <div fxLayout="row" fxHide.xs="true" fxHide.sm="true" fxLayoutAlign="center center">
         <img id="home-logo" src="../../assets/images/logo.jpg" alt="AZ-logo">
         <h1 id="home-title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
     </div>
@@ -7,10 +7,10 @@
 
 <section>
 <div class="about" fxLayout="column" fxLayoutAlign="start center">
-    <h1 id="title-about">CHI SONO</h1>
     <img id="avatar" src="../../assets/images/circle_icon-profilo.png" alt="Antonello Zitelli">
+    <h1 id="title-about">CHI SONO</h1>
 </div>
-<div class="about-textbox" fxLayout="column" fxLayoutAlign="start center">
+<div class="about-textbox" fxLayout="column" fxLayoutAlign="center center">
     <p id="about-paragraph">Sono un giornalista professionista, specializzato in comunicazione politica e istituzionale. Laureato in scienze della comunicazione all’Università degli studi di Cassino, ho seguito corsi di aggiornamento alla LUISS Management e alla SDA Bocconi.&nbsp;Ho già scritto per il quotidiano <strong id="black">Libero</strong> e collaborato con <strong id="black">Il Tempo</strong>, La Notizia Giornale, Romauno tv, Rttr tv, D+, Odeon tv, Telesiciliacolor-Rete 8, Teleradio del Mediterraneo, SMAU Sicilia, Mondimpresa e Confindustria Sicilia, Comune di Catania, Provincia regionale di Catania.</p>
     <p id="about-paragraph">Sono stato <strong id="black">Spin doctor e ghost writer</strong> di parlamentari e amministratori pubblici. Ho già redatto strategie di comunicazione per conto di imprese, istituzioni, manager e personaggi pubblici. Sono stato docente a contratto di comunicazione e giornalismo per la Facoltà di Lettere e filosofia dell'università di Catania. Ho collaborato con il gruppo <strong id="black">Focus management school</strong> e <strong id="black">Metaconsulting</strong>. Sono autore dei volumi “Comunica da leader”, “Sono solo salvinate” e “Parole di buon senso”.</p>
 </div>
@@ -21,12 +21,12 @@
         <h1 id="title-work">COSA FACCIO?</h1>
     </div>
     <div class="work-textbox" fxLayout="column" fxLayoutAlign="center center">
-        <p id="work-paragraph">Creo contenuti per il web (social network, blog, siti internet) per aziende, professionisti e organizzazioni. Progetto e realizzo speech, video, info-grafiche e <strong>articoli</strong>. Svolgo <strong>consulenze</strong> nel campo della comunicazione politica e istituzionale. Collaboro, in qualità di docente, con diverse organizzazioni e associazioni di categoria. Mi occupo di <strong>comunicazione</strong> a 360 gradi, ma in particolare di <strong>public speaking</strong>.</p>
+        <p id="work-paragraph">Creo contenuti per il web (social network, blog, siti internet) per aziende, professionisti e organizzazioni. Progetto e realizzo speech, video, info-grafiche e <strong>articoli</strong>. Svolgo <strong>consulenze</strong> nel campo della comunicazione politica e istituzionale. Collaboro, in qualità di docente, con diverse organizzazioni e associazioni di categoria. Mi occupo di <strong>comunicazione</strong> a 360 gradi.</p>
     </div>
 </section>
 
 <section>
-    <div class="shortcut" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
+    <div class="shortcut" fxLayout="row" fxLayout.xs="column" fxLayout.sm="column" fxLayoutAlign="space-around center">
         <div fxLayout="column" fxLayoutAlign="space-around center">
             <img class="shortcut-circle" src="../../assets/images/circle-coaching.png" alt="Coaching">
             <button id="button" (click)="coachingNavigate()">COACHING</button>
@@ -48,12 +48,23 @@
     </div>
 </section>
 
+
+<section>
+    <div class="phrase-container" fxLayout="column">
+        <p id="phrase" fxLayoutAlign="center center">"Le parole si dimenticano. Le storie e le emozioni restano per sempre"</p>
+        <p id="signature" fxLayoutAlign="end center">Antonello Zitelli</p>
+    </div>
+</section>
+
 <section>
     <div class="contact-container" fxLayout="column" fxLayoutAlign="center center">
         <div class="contact" fxLayout="column" fxLayoutAlign="center center">
             <h1 id="title-contact">CONTATTAMI</h1>
         </div>
-        <div class="contact-buttons"> 
+        <div class="contact-buttons" fxHide.xs="true" fxHide.sm="true"> 
+            <a id="contact-button" href="mailto:dimmi@antonellozitelli.it">dimmi@antonellozitelli.it</a>
+        </div>
+        <div class="contact-buttons" fxHide.md="true" fxHide.lg="true" fxHide.xl="true"> 
             <a id="contact-button" href="tel:3939445566">3939445566</a>
         </div>
     </div>
