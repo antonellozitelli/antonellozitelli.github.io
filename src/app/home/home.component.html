@@ -1,5 +1,5 @@
 <section>
-    <div fxLayout="row" fxLayoutAlign="center center">
+    <div fxLayout="row" fxHide.lt-sm="true" fxLayoutAlign="center center">
         <img id="home-logo" src="../../assets/images/logo.jpg" alt="AZ-logo">
         <h1 id="home-title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
     </div>
@@ -26,7 +26,7 @@
 </section>
 
 <section>
-    <div class="shortcut" fxLayout="row" fxLayoutAlign="space-around center">
+    <div class="shortcut" fxLayout="row" fxLayout.lt-sm="column" fxLayoutAlign="space-around center">
         <div fxLayout="column" fxLayoutAlign="space-around center">
             <img class="shortcut-circle" src="../../assets/images/circle-coaching.png" alt="Coaching">
             <button id="button" (click)="coachingNavigate()">COACHING</button>
@@ -59,6 +59,6 @@
     </div>
 </section>
 
-<footer class="footer">
+<footer class="footer" fxLayout="row" fxLayoutAlign="center center">
     <p id="footer-text">Copyright © 2020 Antonello Zitelli</p>
 </footer>

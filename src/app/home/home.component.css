@@ -102,7 +102,7 @@
 #contact-button {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
-  font-size: 22px;
+  font-size: 18pt;
   text-align: center;
   text-decoration: none;
   box-sizing: border-box;
@@ -125,7 +125,7 @@
   font-family: Roboto;
   font-weight: bold;
   color: white;
-  text-shadow: 4px 4px 10px black;
+  text-shadow: 4px 4px 15px black;
 }
 
 #avatar {
@@ -140,7 +140,7 @@
   font-family: Roboto;
   font-weight: bold;
   color: white;
-  text-shadow: 4px 4px 10px black;
+  text-shadow: 4px 4px 15px black;
 }
 
 #about-paragraph {
@@ -178,5 +178,57 @@
   font-weight: bold;
   font-size: 15pt;
   color: rgb(122, 122, 122);
-  padding-left: 10%;
+}
+
+@media only screen and (max-width: 959px) {
+  .about-textbox {
+    font-size: 5.5vw;
+  }
+
+  .work-textbox {
+    font-size: 5.5vw;
+  }
+
+  .shortcut-circle {
+    width: 50%;
+    height: auto;
+  }
+
+  .shortcut-title {
+    font-size: 6.5vw;
+  }
+
+  .shortcut-paragraph {
+    font-size: 5.5vw;
+  }
+
+  #title-about {
+    font-size: 10vw;
+    padding-bottom: 0;
+  }
+
+  #title-work {
+    font-size: 10vw;
+  }
+
+  #title-contact {
+    font-size: 8vw;
+  }
+
+  #contact-button {
+    font-size: 6vw;
+  }
+
+  #button {
+    font-size: 7vw;
+  }
+
+  #avatar {
+    width: 35%;
+    height: auto;
+  }
+
+  #footer-text {
+    font-size: 4vw;
+  }
 }
