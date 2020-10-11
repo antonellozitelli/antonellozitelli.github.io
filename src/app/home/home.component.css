@@ -113,11 +113,11 @@
 }
 
 #signature {
-  font-size: 26pt;
+  font-size: 24pt;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
-  color: #297f00;
+  color: black;
   margin-top: -1%;
 }
 
@@ -227,11 +227,11 @@
 
 @media only screen and (max-width: 959px) {
   .about-textbox {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   .work-textbox {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   .shortcut-circle {
@@ -240,11 +240,11 @@
   }
 
   .shortcut-title {
-    font-size: 6.5vw;
+    font-size: 6vw;
   }
 
   .shortcut-paragraph {
-    font-size: 5.5vw;
+    font-size: 5vw;
   }
 
   #title-about {
@@ -265,7 +265,7 @@
   }
 
   #button {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 
   #avatar {
@@ -274,11 +274,11 @@
   }
 
   #phrase {
-    font-size: 7vw;
+    font-size: 6.5vw;
   }
 
   #signature {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   #footer-text {
