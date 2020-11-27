@@ -29,7 +29,7 @@
 }
 
 .about {
-  background-image: url("../../assets/images/about-background.jpg");
+  background-image: url("../../assets/images/about-background.webp");
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -45,7 +45,7 @@
 }
 
 .work {
-  background-image: url("../../assets/images/work-background.jpg");
+  background-image: url("../../assets/images/work-background.webp");
   background-position: center;
   background-size: cover;
   padding: 10%;
