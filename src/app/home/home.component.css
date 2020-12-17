@@ -104,24 +104,17 @@
   position: relative;
 }
 
-#phrase {
-  font-size: 30pt;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 500;
-  color: #297f00;
+.about-paragraph {
+  text-align: justify;
+  width: 70%;
+  color: rgb(122, 122, 122);
 }
 
-#signature {
-  font-size: 24pt;
-  font-family: "Times New Roman", Times, serif;
-  font-style: italic;
-  font-weight: 500;
+.black {
   color: black;
-  margin-top: -1%;
 }
 
-#button {
+.button {
   font-family: "Open Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: bold;
@@ -139,12 +132,12 @@
   outline: none;
 }
 
-#button:hover {
+.button:hover {
   background-color: white;
   color: #7cda24;
 }
 
-#contact-button {
+.contact-button {
   font-family: "Open Sans", Arial, sans-serif;
   font-weight: 500;
   font-size: 18pt;
@@ -161,8 +154,25 @@
   background-color: #85c9d1;
 }
 
-#contact-button:hover {
+.contact-button:hover {
   background-color: #8ed8e0;
+}
+
+#phrase {
+  font-size: 30pt;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #297f00;
+}
+
+#signature {
+  font-size: 24pt;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: black;
+  margin-top: -1%;
 }
 
 #title-work {
@@ -188,20 +198,10 @@
   text-shadow: 4px 4px 15px black;
 }
 
-#about-paragraph {
-  text-align: justify;
-  width: 70%;
-  color: rgb(122, 122, 122);
-}
-
 #work-paragraph {
   text-align: justify;
   width: 70%;
   color: white;
-}
-
-#black {
-  color: black;
 }
 
 #title-contact {

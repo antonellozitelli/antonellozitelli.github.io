@@ -16,8 +16,8 @@ export class HomeComponent implements OnInit {
     window.open('https://youtu.be/xnQTOsaKC5o', '_blank');
   }
 
-  leadershipNavigate(): void {
-    window.open('https://www.facebook.com/antonellozitelli', '_blank');
+  ghostNavigate(): void {
+    window.open('https://youtu.be/Vl2B80qGMis', '_blank');
   }
 
   creativityNavigate(): void {
