@@ -1,36 +1,20 @@
-@font-face {
-  font-family: "Roboto";
-  src: url("../../assets/fonts/roboto_regular/Roboto-Regular-webfont.woff")
-    format("woff");
-  font-weight: normal;
-  font-style: normal;
-}
-
-#button {
+button {
   font-family: "Open Sans", Arial, sans-serif;
   text-decoration: none;
   font-weight: bold;
   font-size: 18pt;
   text-align: center;
   border: 2px solid;
-  border-width: 0px;
   border-radius: 5px;
   line-height: 1.7em;
   box-sizing: border-box;
   padding: 0.3em 1em;
-  background-color: lightgrey;
+  background-color: #7cda24;
   color: white;
   transition: 0.5s;
   outline: none;
 }
 
-#button:hover {
-  background-color: #7cda24;
-}
-
-#error-text {
-  font-family: Roboto;
-  font-size: 26pt;
-  text-align: center;
-  padding-top: 15%;
+button:hover {
+  background-color: #297f00;
 }

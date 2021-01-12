@@ -1,4 +1,4 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 
 @Component({
   selector: 'app-home',
@@ -6,13 +6,16 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./home.component.css']
 })
 export class HomeComponent implements OnInit {
+  year: number;
 
-  constructor() { }
-
-  ngOnInit(): void {
+  constructor() {
   }
 
-  coachingNavigate(): void{
+  ngOnInit(): void {
+    this.year = new Date().getFullYear();
+  }
+
+  coachingNavigate(): void {
     window.open('https://youtu.be/xnQTOsaKC5o', '_blank');
   }
 

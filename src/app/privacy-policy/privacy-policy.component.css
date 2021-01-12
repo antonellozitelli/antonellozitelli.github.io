@@ -1,0 +1,41 @@
+#back-button {
+  margin-top: 15px;
+  margin-left: 15px;
+  background-color: white;
+  border: 0 solid;
+  border-radius: 10px;
+}
+
+#back-button>p {
+  margin: 5px
+}
+
+#back-button:focus {
+  outline: 0 solid transparent;
+}
+
+section {
+  background-color: #0089f3;
+  color: white;
+}
+
+#main-div {
+  width: 80%;
+  margin: 0 10%;
+  padding-bottom: 15px;
+}
+
+#title-container {
+ text-align: center;
+}
+
+#title-container>h1, h2 {
+  font-size: 20pt;
+  margin: 10px;
+}
+
+a {
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+}

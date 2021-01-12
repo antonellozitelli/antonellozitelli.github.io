@@ -1,30 +1,44 @@
 <!doctype html>
-<html lang="en">
+<html lang="it">
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
   <script async src="https://www.googletagmanager.com/gtag/js?id=G-7KGWJCFJZG"></script>
   <script>
     window.dataLayer = window.dataLayer || [];
-    function gtag(){dataLayer.push(arguments);}
+
+    function gtag() {
+      dataLayer.push(arguments);
+    }
+
     gtag('js', new Date());
 
     gtag('config', 'G-7KGWJCFJZG');
   </script>
   <!-- Facebook Pixel Code -->
   <script>
-    !function(f,b,e,v,n,t,s)
-    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-    n.queue=[];t=b.createElement(e);t.async=!0;
-    t.src=v;s=b.getElementsByTagName(e)[0];
-    s.parentNode.insertBefore(t,s)}(window, document,'script',
-    'https://connect.facebook.net/en_US/fbevents.js');
+    !function (f, b, e, v, n, t, s) {
+      if (f.fbq) return;
+      n = f.fbq = function () {
+        n.callMethod ?
+          n.callMethod.apply(n, arguments) : n.queue.push(arguments)
+      };
+      if (!f._fbq) f._fbq = n;
+      n.push = n;
+      n.loaded = !0;
+      n.version = '2.0';
+      n.queue = [];
+      t = b.createElement(e);
+      t.async = !0;
+      t.src = v;
+      s = b.getElementsByTagName(e)[0];
+      s.parentNode.insertBefore(t, s)
+    }(window, document, 'script',
+      'https://connect.facebook.net/en_US/fbevents.js');
     fbq('init', '714265625871765');
     fbq('track', 'PageView');
   </script>
   <noscript><img height="1" width="1" style="display:none"
-    src="https://www.facebook.com/tr?id=714265625871765&ev=PageView&noscript=1"
+                 src="https://www.facebook.com/tr?id=714265625871765&ev=PageView&noscript=1"
   /></noscript>
   <!-- End Facebook Pixel Code -->
   <meta charset="utf-8">
@@ -33,7 +47,8 @@
   <title>Public Speaking Coach & Media Trainer | Antonello Zitelli</title>
   <meta name="keywords" content="comunicazione, public speaking, antonello zitelli">
   <meta name="og:title" property="og:title" content="Public Speaking Coach & Media Trainer | Antonello Zitelli">
-  <meta name="description" content="Antonello Zitelli, giornalista professionista, è esperto in Media training e Public speaking. Si occupa da anni di comunicazione politica e istituzionale."></meta>
+  <meta name="description"
+        content="Antonello Zitelli, giornalista professionista, è esperto in Media training e Public speaking. Si occupa da anni di comunicazione politica e istituzionale."/>
   <meta http-equiv="content-language" content="it">
   <meta http-equiv="content-type" content="text/html; charset=ISO-8859-1">
   <base href="/">
@@ -51,8 +66,13 @@
   <link rel="icon" type="image/png" sizes="96x96" href="assets/images/favicons/favicon-96x96.png">
   <link rel="icon" type="image/png" sizes="16x16" href="assets/images/favicons/favicon-16x16.png">
   <meta name="viewport" content="width=device-width, initial-scale=1">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.js"></script>
+  <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.1.0/cookieconsent.min.css">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link rel="preload" as="style" href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap">
 </head>
 <body>
-  <app-root></app-root>
+<app-root></app-root>
 </body>
 </html>
