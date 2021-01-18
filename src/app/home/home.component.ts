@@ -1,4 +1,5 @@
 import {Component, OnInit} from '@angular/core';
+import {MediaObserver} from '@angular/flex-layout';
 
 @Component({
   selector: 'app-home',
@@ -8,8 +9,7 @@ import {Component, OnInit} from '@angular/core';
 export class HomeComponent implements OnInit {
   year: number;
 
-  constructor() {
-  }
+  constructor(private media: MediaObserver) {}
 
   ngOnInit(): void {
     this.year = new Date().getFullYear();
@@ -25,5 +25,9 @@ export class HomeComponent implements OnInit {
 
   creativityNavigate(): void {
     window.open('https://youtu.be/lUWnmNzZdck', '_blank');
+  }
+
+  isMobile(): boolean {
+    return this.media.isActive('xs');
   }
 }
