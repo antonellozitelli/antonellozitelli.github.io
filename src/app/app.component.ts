@@ -19,8 +19,7 @@ export class AppComponent implements OnInit {
     },
     theme: 'edgeless',
     content: {
-      message:
-        'Questo sito utilizza cookies, anche di terze parti, per migliorarne l’esperienza di navigazione...',
+      message: 'Questo sito utilizza cookies per migliorare l’esperienza di navigazione...',
       dismiss: 'Accetta',
       link: 'Scopri di più',
       href: '/privacy-policy',
