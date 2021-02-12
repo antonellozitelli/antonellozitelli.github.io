@@ -7,13 +7,17 @@ import {AppComponent} from './app.component';
 import {PageNotFoundComponent} from './page-not-found/page-not-found.component';
 import {HomeComponent} from './home/home.component';
 import {PrivacyPolicyComponent} from './privacy-policy/privacy-policy.component';
+import { ComunicaDaLeaderComponent } from './comunica-da-leader/comunica-da-leader.component';
+import { FormComponent } from './comunica-da-leader/form/form.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     PageNotFoundComponent,
     HomeComponent,
-    PrivacyPolicyComponent
+    PrivacyPolicyComponent,
+    ComunicaDaLeaderComponent,
+    FormComponent
   ],
   imports: [
     BrowserModule,

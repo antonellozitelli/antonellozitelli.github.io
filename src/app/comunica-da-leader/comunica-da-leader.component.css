@@ -1,0 +1,30 @@
+#az-logo {
+  width: 5%;
+  height: auto;
+  padding-right: 1%;
+}
+
+#title {
+  font-size: 32pt;
+  font-family: "Times New Roman", Times, serif;
+  font-style: italic;
+  font-weight: 500;
+  color: #297f00;
+}
+
+#book-container {
+  background-color: #66999B;
+}
+
+#book-title {
+  font-size: 25pt;
+  color: white;
+}
+
+.character {
+  width: 20%;
+}
+
+#book-img {
+  width: 20%;
+}
