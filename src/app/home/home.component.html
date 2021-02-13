@@ -16,10 +16,12 @@
       in comunicazione politica e
       istituzionale. Laureato in scienze della comunicazione all’Università degli studi di Cassino, ho seguito corsi di
       aggiornamento alla LUISS Management e alla SDA Bocconi.&nbsp;Ho già scritto per il quotidiano <strong
-        class="black">Libero</strong> e collaborato con <strong class="black">Il Tempo</strong>, La Notizia Giornale,
+        class="black"
+      >Libero</strong> e collaborato con <strong class="black">Il Tempo</strong>, La Notizia Giornale,
       Romauno tv, Rttr tv, D+, Odeon tv, Telesiciliacolor-Rete 8, Teleradio del Mediterraneo, SMAU Sicilia, Mondimpresa
       e Confindustria Sicilia, Comune di Catania, Provincia regionale di Catania.<br><br>Sono stato <strong
-        class="black">Spin doctor e ghost writer</strong> di parlamentari e
+        class="black"
+      >Spin doctor e ghost writer</strong> di parlamentari e
       amministratori pubblici. Ho già redatto strategie di comunicazione per conto di imprese, istituzioni, manager e
       personaggi pubblici. Sono stato docente a contratto di comunicazione e giornalismo per la Facoltà di Lettere e
       filosofia dell'università di Catania. Ho collaborato con il gruppo <strong class="black">Focus management
@@ -42,12 +44,12 @@
 </section>
 
 <section>
-  <div class="shortcut" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
+  <div class="shortcuts" fxLayout="row" fxLayout.lt-md="column" fxLayoutAlign="space-around center">
     <div class="wow animate__animated {{isMobile() ? 'animate__zoomIn' : 'animate__fadeInLeft'}}" fxLayout="column"
          fxLayoutAlign="space-around center">
       <img class="shortcut-circle" src="https://antonellozitelli.it/assets/images/circle-leadership.webp"
            alt="Coaching">
-      <button class="button" (click)="coachingNavigate()">COACHING</button>
+      <button class="btn shortcut-btn" (click)="coachingNavigate()">COACHING</button>
       <h2 class="shortcut-title"><strong>Public Speaking</strong></h2>
       <p class="shortcut-paragraph">Lezioni individuali con metodo innovativo, piacevole ed efficace. Esercitazioni
         pratiche e simulazioni reali davanti a microfono e telecamera.</p>
@@ -55,7 +57,7 @@
     <div class="wow animate__animated animate__zoomIn" fxLayout="column" fxLayoutAlign="space-around center">
       <img class="shortcut-circle" src="https://antonellozitelli.it/assets/images/circle-coaching.webp"
            alt="Leadership">
-      <button class="button" (click)="ghostNavigate()">GHOST WRITER</button>
+      <button class="btn shortcut-btn" (click)="ghostNavigate()">GHOST WRITER</button>
       <h2 class="shortcut-title"><strong>Verba volant, scripta manent!</strong></h2>
       <p class="shortcut-paragraph">Sono tante le occasioni in cui è necessario mettere in fila le parole e scriverle
         nero su bianco. Una lettera sorprende sempre il destinatario. Chiunque esso sia. Parliamone!</p>
@@ -64,7 +66,7 @@
          fxLayoutAlign="space-around center">
       <img class="shortcut-circle" src="https://antonellozitelli.it/assets/images/circle-creativity.webp"
            alt="Creativity">
-      <button class="button" (click)="creativityNavigate()">CREATIVITY</button>
+      <button class="btn shortcut-btn" (click)="creativityNavigate()">CREATIVITY</button>
       <h2 class="shortcut-title"><strong>Creazione contenuti</strong></h2>
       <p class="shortcut-paragraph">Video interviste, redazionali, note e comunicati stampa. Stesura speech per
         conferenze, riunioni e presentazioni. Infografiche e contenuti per i social.</p>
@@ -86,9 +88,14 @@
 <section>
   <div class="contact-container" fxLayout="column" fxLayoutAlign="center center">
     <p id="title-contact" class="wow animate__animated animate__bounceInLeft">CONTATTAMI</p>
-    <div class="contact-buttons" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="10px">
-      <a class="contact-button wow animate__animated animate__jackInTheBox" href="tel:3939445566">3939445566</a>
-      <a class="contact-button wow animate__animated animate__jackInTheBox" href="mailto:dimmi@antonellozitelli.it">dimmi@antonellozitelli.it</a>
+    <div class="contact-buttons" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="20px">
+      <a href="tel:3939445566">
+        <button class="btn contact-button number wow animate__animated animate__jackInTheBox">3939445566</button>
+      </a>
+      <a href="mailto:dimmi@antonellozitelli.it">
+        <button class="btn contact-button mail wow animate__animated animate__jackInTheBox">dimmi@antonellozitelli.it
+        </button>
+      </a>
     </div>
   </div>
 </section>

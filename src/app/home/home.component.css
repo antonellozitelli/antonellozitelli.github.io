@@ -1,11 +1,15 @@
+.black {
+  color: black;
+}
+
 #home-logo {
-  width: 5%;
+  width: 4%;
   height: auto;
   padding-right: 1%;
 }
 
 #home-title {
-  font-size: 32pt;
+  font-size: 26pt;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
@@ -20,57 +24,96 @@
   padding-bottom: 4%;
 }
 
+#avatar {
+  padding-top: 6%;
+  width: 14%;
+  height: auto;
+}
+
+#title-about {
+  margin-bottom: -1.5%;
+  font-size: 32pt;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 4px 15px black;
+}
+
 .about-textbox {
   background-color: rgb(241, 237, 237);
-  font-size: 20pt;
-  color: black;
+}
+
+.about-paragraph {
+  font-size: 18pt;
+  text-align: justify;
+  width: 70%;
+  color: rgb(122, 122, 122);
 }
 
 .work {
   background-image: url("../../assets/images/work-background.webp");
   background-position: center;
   background-size: cover;
-  padding: 10%;
+  padding: 8%;
+}
+
+#title-work {
+  font-size: 32pt;
+  font-weight: bold;
+  color: white;
+  text-shadow: 4px 4px 15px black;
 }
 
 .work-textbox {
   background-color: #0089f3;
-  background-size: cover;
-  font-size: 20pt;
   padding: 1.5%;
 }
 
-.shortcut {
+#work-paragraph {
+  font-size: 18pt;
+  text-align: justify;
+  width: 70%;
+  color: white;
+}
+
+.shortcuts {
   background-color: rgb(241, 237, 237);
   background-size: cover;
-  padding: 5%;
+  padding: 4%;
 }
 
 .shortcut-circle {
   padding-bottom: 5%;
 }
 
+.shortcut-btn {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 16pt;
+  font-weight: bold;
+  min-width: 160px;
+  height: 55px;
+  background-color: #49A078;
+  border-radius: 21px;
+}
+
+.shortcut-btn:hover {
+  cursor: pointer;
+  background-color: #73BF9D;
+  box-shadow: 0 10px 30px 0 #49A078;
+  -moz-box-shadow: 0 10px 30px 0 #49A078;
+  -webkit-box-shadow: 0 10px 30px 0 #49A078;
+  -o-box-shadow: 0 10px 30px 0 #49A078;
+}
+
 .shortcut-title {
-  font-size: 20pt;
+  font-size: 18pt;
 }
 
 .shortcut-paragraph {
-  font-size: 16pt;
+  font-size: 14pt;
   text-align: center;
   width: 70%;
   color: rgb(122, 122, 122);
-  margin-top: -2%;
-}
-
-.contact-container {
-  background-color: #7dbec5;
-  background-size: cover;
-  font-size: 20pt;
-  padding: 1%;
-}
-
-.contact-buttons {
-  padding-bottom: 1.5%;
+  margin-top: -1%;
 }
 
 .phrase-container {
@@ -79,60 +122,8 @@
   position: relative;
 }
 
-.about-paragraph {
-  text-align: justify;
-  width: 70%;
-  color: rgb(122, 122, 122);
-}
-
-.black {
-  color: black;
-}
-
-.button {
-  font-family: "Open Sans", Arial, sans-serif;
-  text-decoration: none;
-  font-weight: bold;
-  font-size: 18pt;
-  text-align: center;
-  border: 0 solid;
-  border-radius: 5px;
-  line-height: 1.7em;
-  box-sizing: border-box;
-  padding: 0.3em 1em;
-  background: #7cda24;
-  color: white;
-  transition: 0.5s;
-  outline: none;
-}
-
-.button:hover {
-  background-color: white;
-  color: #7cda24;
-}
-
-.contact-button {
-  font-family: "Open Sans", Arial, sans-serif;
-  font-weight: 500;
-  font-size: 22pt;
-  text-align: center;
-  text-decoration: none;
-  box-sizing: border-box;
-  padding: 0.3em 1em;
-  border-radius: 3px;
-  line-height: 1.7em;
-  color: white;
-  transition: 0.5s;
-  outline: none;
-  background: #85c9d1 0 0;
-}
-
-.contact-button:hover {
-  background-color: #8ed8e0;
-}
-
 #phrase {
-  font-size: 30pt;
+  font-size: 26pt;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
@@ -140,7 +131,7 @@
 }
 
 #signature {
-  font-size: 24pt;
+  font-size: 22pt;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
@@ -148,37 +139,44 @@
   margin-top: -1%;
 }
 
-#title-work {
-  font-size: 40pt;
-  font-weight: bold;
-  color: white;
-  text-shadow: 4px 4px 15px black;
-}
-
-#avatar {
-  padding-top: 12%;
-  width: 16%;
-  height: auto;
-}
-
-#title-about {
-  margin-bottom: -1.5%;
-  font-size: 40pt;
-  font-weight: bold;
-  color: white;
-  text-shadow: 4px 4px 15px black;
-}
-
-#work-paragraph {
-  text-align: justify;
-  width: 70%;
-  color: white;
+.contact-container {
+  background-color: #7dbec5;
+  background-size: cover;
+  padding: 1%;
 }
 
 #title-contact {
   font-size: 26pt;
   font-weight: bold;
   color: white;
+}
+
+.contact-buttons {
+  padding-bottom: 2%;
+}
+
+.contact-button {
+  font-family: "Open Sans", Arial, sans-serif;
+  font-size: 14pt;
+  font-weight: bold;
+  text-decoration: none;
+  min-width: 160px;
+  height: 55px;
+  background-color: #49A078;
+  border-radius: 21px;
+}
+
+.number {
+  letter-spacing: 2px;
+}
+
+.contact-button:hover {
+  cursor: pointer;
+  background-color: #73BF9D;
+  box-shadow: 0 10px 30px 0 #49A078;
+  -moz-box-shadow: 0 10px 30px 0 #49A078;
+  -webkit-box-shadow: 0 10px 30px 0 #49A078;
+  -o-box-shadow: 0 10px 30px 0 #49A078;
 }
 
 .footer {
@@ -188,67 +186,46 @@
 #footer-text {
   font-weight: bold;
   text-align: center;
-  font-size: 15pt;
+  font-size: 12pt;
   color: rgb(122, 122, 122);
 }
 
 @media only screen and (max-width: 959px) {
-  .about-textbox {
-    font-size: 5vw;
+  #avatar {
+    width: 30%;
+    height: auto;
   }
 
-  .work-textbox {
-    font-size: 5vw;
+  #title-about, #title-work {
+    font-size: 8vw;
+  }
+
+  .about-paragraph, #work-paragraph, .shortcut-btn, .shortcut-paragraph, #signature {
+    font-size: 4.8vw;
   }
 
   .shortcut-circle {
-    width: 50%;
+    width: 40%;
     height: auto;
   }
 
-  .shortcut-title {
-    font-size: 6vw;
-  }
-
-  .shortcut-paragraph {
+  .shortcut-title, #phrase {
     font-size: 5vw;
   }
 
-  #title-about {
-    font-size: 10vw;
-    padding-bottom: 0;
-  }
-
-  #title-work {
-    font-size: 10vw;
-  }
-
   #title-contact {
-    font-size: 7vw;
+    font-size: 6vw;
   }
 
   .contact-button {
-    font-size: 6vw;
+    font-size: 4vw;
   }
 
-  #button {
-    font-size: 6.5vw;
-  }
-
-  #avatar {
-    width: 35%;
-    height: auto;
-  }
-
-  #phrase {
-    font-size: 6.5vw;
-  }
-
-  #signature {
-    font-size: 6vw;
+  .mail {
+    margin-bottom: 15px;
   }
 
   #footer-text {
-    font-size: 4vw;
+    font-size: 3.5vw;
   }
 }

@@ -12,13 +12,4 @@ export class ComunicaDaLeaderComponent implements OnInit {
 
   ngOnInit(): void {
   }
-
-  setCookie(): void {
-    this.cookieService.set('book-preview-access', 'true', 15);
-    window.location.reload();
-  }
-
-  unsetCookie(): void {
-    this.cookieService.delete('book-preview-access');
-  }
 }

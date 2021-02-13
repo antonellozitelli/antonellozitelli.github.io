@@ -1,0 +1,76 @@
+#access-error-container {
+  width: 900px;
+  margin-top: 200px;
+  background: white;
+  border-radius: 10px;
+  padding: 60px 80px 60px 80px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#error-title {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 22pt;
+}
+
+#book-access-btn, #book-buy-btn {
+  min-width: 200px;
+  height: 50px;
+  background-color: #2B3A67;
+  border-radius: 21px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 14px;
+}
+
+#book-buy-btn {
+  background-color: #D95830;
+  text-align: center;
+}
+
+#book-access-btn:hover:enabled {
+  cursor: pointer;
+  background-color: #4861AD;
+  box-shadow: 0 10px 30px 0 #496A81;
+  -moz-box-shadow: 0 10px 30px 0 #496A81;
+  -webkit-box-shadow: 0 10px 30px 0 #496A81;
+  -o-box-shadow: 0 10px 30px 0 #496A81;
+}
+
+#book-buy-btn:hover:enabled {
+  cursor: pointer;
+  background-color: #DE6E4B;
+  box-shadow: 0 10px 30px 0 #D95830;
+  -moz-box-shadow: 0 10px 30px 0 #D95830;
+  -webkit-box-shadow: 0 10px 30px 0 #D95830;
+  -o-box-shadow: 0 10px 30px 0 #D95830;
+}
+
+@media only screen and (max-width: 959px) {
+  #access-error-container {
+    width: 90%;
+    padding: 60px 10px 60px 10px;
+  }
+
+  #error-title {
+    font-size: 18pt;
+    text-align: center;
+  }
+}
+
+@media only screen and (max-width: 599px) {
+  #access-error-container {
+    width: 95%;
+    padding: 60px 10px 60px 10px;
+  }
+
+  #error-title {
+    font-size: 12pt;
+    text-align: center;
+  }
+
+  #book-access-btn, #book-buy-btn {
+    font-size: 12px;
+  }
+}

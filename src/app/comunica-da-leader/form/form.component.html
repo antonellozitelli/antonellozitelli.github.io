@@ -2,7 +2,7 @@
   <div id="form-container">
     <div class="wow animate__animated animate__bounceIn animate__delay-1s" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="12px">
       <h1 id="form-title">Migliora la tua comunicazione</h1>
-      <img fxShow.lt-md="false" src="assets/images/copertina-libro.jpg" alt="comunica-da-leader-copertina-libro"
+      <img fxShow.lt-md="false" src="assets/images/copertina-libro.webp" alt="comunica-da-leader-copertina-libro"
            width="20%">
       <h2 id="form-subtitle" fxShow.xs="false">Una marcia in più nella vita e nel lavoro</h2>
       <h3 id="form-description">Diventa un abile comunicatore creando il tuo stile comunicativo. Compilando il form
@@ -34,15 +34,15 @@
                    value="Autorizzo il trattamento dei miei dati personali">
             <label for="privacycheckbox">
               <span style="margin-left:5px; color:red">* </span><span id="privacy-text">Autorizzo il trattamento dei miei dati personali <a
-              id="privacy-link" href="https://antonellozitelli.it/privacy-policy">(Privacy policy)</a></span>
+              id="privacy-link" routerLink="/privacy-policy">(Privacy policy)</a></span>
             </label>
           </div>
           <span id="form-err"></span>
           <span id="form-send-err">Qualcosa è andato storto durante l'invio dei dati. Riprova</span>
-          <img id="book-img" fxShow.gt-xs="false" src="assets/images/copertina-libro.jpg"
+          <img id="book-img" fxShow.gt-xs="false" src="assets/images/copertina-libro.webp"
                alt="comunica-da-leader-copertina-libro" width="30%">
           <div id="form-btn-container">
-            <button class="wow animate__animated animate__bounceIn animate__delay-1s" type="submit" id="form-btn" [disabled]="!formData.valid">Scarica l'anteprima</button>
+            <button class="btn wow animate__animated animate__bounceIn animate__delay-1s" type="submit" id="form-btn" [disabled]="!formData.valid">Scarica l'anteprima</button>
           </div>
         </div>
       </form>

@@ -4,13 +4,10 @@
   <h1 id="title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
 </div>
 
-<button (click)="setCookie()">set cookie</button>
-<button (click)="unsetCookie()">unset cookie</button>
-
 <section id="form-section">
   <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap.gt-xs="50px">
     <img fxShow.lt-md="false" class="characters wow animate__animated animate__bounceInLeft"
-         src="assets/images/business-human-2.png"
+         src="assets/images/businessman-2.webp"
          alt="business-man-3d-characters">
     <app-form class="wow animate__animated animate__backInDown"
               *ngIf="!cookieService.check('book-preview-access')"></app-form>
@@ -21,17 +18,17 @@
         <h2 id="book-access-subtitle">Hai ottenutto l'accesso a 2 capitoli in anteprima</h2>
         <p id="book-access-description">Il tuo accesso scadrà tra 15 giorni</p>
         <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="25px">
-          <button class="wow animate__animated animate__bounceIn" id="book-access-btn">Scarica il pdf</button>
+          <button class="btn wow animate__animated animate__bounceIn" id="book-access-btn" routerLink="/anteprima-libro">Inizia a leggere</button>
           <a href="https://www.amazon.it/Comunica-leader-comunicazione-politica-istituzionale/dp/1717825575/"
              target="_blank">
-            <button class="wow animate__animated animate__bounceIn" id="book-buy-btn">Acquista il libro completo
+            <button class="btn wow animate__animated animate__bounceIn" id="book-buy-btn">Acquista il libro completo
             </button>
           </a>
         </div>
       </div>
     </div>
     <img fxShow.lt-md="false" class="characters wow animate__animated animate__bounceInRight"
-         src="assets/images/business-human.png" alt="business-man-3d-character">
+         src="assets/images/businessman.webp" alt="business-man-3d-character">
   </div>
 </section>
 
@@ -43,7 +40,7 @@
     <p class="wow animate__animated animate__bounceInUp">Politici, manager e professionisti sono sempre più spesso
       tenuti a <strong>parlare in pubblico</strong>,
       rilasciare interviste radiofoniche e televisive, scrivere dichiarazioni da inviare ai media, presentare progetti a
-      persone interne ed esterne alla propria organizzazione. <strong>“Comunica da leader”</strong> è <strong>manuale
+      persone interne ed esterne alla propria organizzazione. <strong>“Comunica da leader”</strong> è un <strong> manuale
         pratico</strong> dedicato alla comunicazione politica e istituzionale. Il volume spiega quali sono i meccanismi
       che regolano la comunicazione, cos’è una notizia, come si scrive un comunicato stampa, come si prepara un
       discorso e come si organizza un evento. Il tutto con <strong>esempi pratici</strong> e un linguaggio estremamente

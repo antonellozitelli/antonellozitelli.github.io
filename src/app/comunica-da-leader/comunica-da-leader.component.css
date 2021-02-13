@@ -13,7 +13,7 @@ a {
 }
 
 strong {
-  color: black;
+  color: #D95830;
 }
 
 #az-logo {
@@ -27,10 +27,11 @@ strong {
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
-  color: #297f00;
+  color: #D95830;
 }
 
 #form-section {
+  margin-top: 5px;
   margin-bottom: 30px;
 }
 
@@ -76,18 +77,6 @@ strong {
   border-radius: 21px;
   font-family: Josefin Sans, sans-serif;
   font-size: 14px;
-  color: #fff;
-  line-height: 1.2;
-  text-transform: uppercase;
-  padding: 5px 20px 0;
-  -webkit-transition: all 0.4s;
-  -o-transition: all 0.4s;
-  -moz-transition: all 0.4s;
-  transition: all 0.4s;
-  box-shadow: 0 10px 30px 0 #6F94AE;
-  -moz-box-shadow: 0 10px 30px 0 #6F94AE;
-  -webkit-box-shadow: 0 10px 30px 0 #6F94AE;
-  -o-box-shadow: 0 10px 30px 0 #6F94AE;
 }
 
 #book-buy-btn {
@@ -114,12 +103,13 @@ strong {
  }
 
  #book-info-container {
-  background-color: rgb(241, 237, 237);
+  background-color: white;
   padding-top: 40px;
   padding-bottom: 40px;
 }
 
 #book-info-title {
+  color: #D95830;
   font-size: 24pt;
   font-family: Source Sans Pro, sans-serif;
   font-weight: bolder;
@@ -127,6 +117,7 @@ strong {
 }
 
 #book-info-subtitle {
+  color: #2B3A67;
   font-size: 18pt;
   font-family: Source Sans Pro, sans-serif;
   font-weight: 800;
@@ -134,11 +125,11 @@ strong {
 }
 
 #book-info-container p {
+  color: #2B3A67;
   font-family: Source Sans Pro, sans-serif;
   font-size: 16pt;
   text-align: justify;
   width: 50%;
-  color: rgb(122, 122, 122);
 }
 
 .about {
@@ -161,10 +152,11 @@ strong {
   font-weight: bold;
   color: white;
   text-shadow: 4px 4px 15px black;
+  margin-top: 10px;
 }
 
 .about-textbox {
-  background-color: rgb(241, 237, 237);
+  background-color: white;
 }
 
 .about-paragraph {
@@ -172,7 +164,7 @@ strong {
   font-size: 16pt;
   text-align: justify;
   width: 50%;
-  color: rgb(122, 122, 122);
+  color: #2B3A67;
 }
 
 .footer {
@@ -180,16 +172,16 @@ strong {
 }
 
 #footer-text {
+  font-size: 12pt;
   font-weight: bold;
   text-align: center;
-  font-size: 12pt;
   color: rgb(122, 122, 122);
 }
 
 @media only screen and (max-width: 959px) {
   ::ng-deep body {
     margin: 0;
-    background-image: url("src/assets/images/book-landing-background.jpg");
+    background-image: url("src/assets/images/book-landing-background.webp");
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -236,7 +228,7 @@ strong {
     width: 80%;
   }
 
-  #book-info-container p {
+  #book-info-container p, .about-paragraph {
     font-size: 14pt;
     text-align: justify;
     width: 80%;
@@ -252,9 +244,7 @@ strong {
     letter-spacing: 2px;
   }
 
-  .about-paragraph {
-    font-size: 14pt;
-    text-align: justify;
-    width: 80%;
+  #footer-text {
+    font-size: 3.5vw;
   }
 }

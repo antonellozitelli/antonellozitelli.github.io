@@ -1,0 +1,25 @@
+<pdf-viewer *ngIf="this.cookieService.check('book-preview-access')"
+            [src]="pdfsrc"
+            [render-text]="false"
+            [fit-to-page]="true"
+            [original-size]="true"
+            [show-borders]="true"
+            style="display: block;"
+></pdf-viewer>
+
+<section *ngIf="!this.cookieService.check('book-preview-access')" fxLayoutAlign="center center">
+  <div class="wow animate__animated animate__bounceIn" id="access-error-container" fxLayout="column"
+       fxLayoutAlign="center center" fxLayoutGap="15px">
+    <span id="error-title">🔒 Non hai accesso all'anteprima del libro 🔒</span>
+    <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="25px">
+      <button class="btn wow animate__animated animate__bounceIn" id="book-access-btn" routerLink="/comunica-da-leader">
+        Ottieni l'accesso
+      </button>
+      <a href="https://www.amazon.it/Comunica-leader-comunicazione-politica-istituzionale/dp/1717825575/"
+         target="_blank">
+        <button class="btn wow animate__animated animate__bounceIn" id="book-buy-btn">Acquista il libro completo
+        </button>
+      </a>
+    </div>
+  </div>
+</section>

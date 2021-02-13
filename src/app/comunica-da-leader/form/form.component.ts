@@ -22,7 +22,9 @@ export class FormComponent implements OnInit, OnDestroy {
   }
 
   ngOnDestroy(): void {
-    this.subscription.unsubscribe();
+    if (this.subscription) {
+      this.subscription.unsubscribe();
+    }
   }
 
   sendData(formdata: FormGroup): void {
@@ -62,7 +64,6 @@ export class FormComponent implements OnInit, OnDestroy {
     this.subscription = this.formService.submitForm(data).subscribe((response: IResponseHubspot) => {
         if (response.inlineMessage === 'Grazie per aver inviato il modulo.') {
           this.cookieService.set('book-preview-access', 'true', 15);
-          window.location.reload();
         } else {
           this.handleError();
         }
