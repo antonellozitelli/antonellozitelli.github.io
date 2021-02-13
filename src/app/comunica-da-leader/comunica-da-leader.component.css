@@ -7,6 +7,11 @@ input, button {
   border: none;
 }
 
+a {
+  text-decoration: none;
+  color: #4861AD;
+}
+
 strong {
   color: black;
 }
