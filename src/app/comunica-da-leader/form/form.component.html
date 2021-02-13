@@ -6,29 +6,36 @@
       l'accesso esclusivo a 2 capitoli del libro.</h3>
   </div>
   <div>
-    <form action="/">
+    <form [formGroup]="formData" (ngSubmit)="sendData(formData)">
       <div fxLayout="column" fxLayoutAlign="center center">
         <div class="wrap-input">
-          <input class="form-input" type="text" name="name" placeholder="Nome completo">
-          <span class="focus-input"></span>
+          <label (focusout)="checkForm('fullname')">
+            <input class="form-input" type="text" formControlName="fullname" placeholder="Nome completo *">
+          </label>
+          <span id="fullname" class="focus-input"></span>
         </div>
         <div class="wrap-input">
-          <input class="form-input" type="text" name="email" placeholder="Email">
-          <span class="focus-input"></span>
+          <label (focusout)="checkForm('email')">
+            <input class="form-input" type="text"formControlName="email" placeholder="Email *">
+          </label>
+          <span id="email" class="focus-input"></span>
         </div>
         <div class="wrap-input">
-          <input class="form-input" type="text" name="work" placeholder="Professione">
-          <span class="focus-input"></span>
+          <label (focusout)="checkForm('job')">
+            <input class="form-input" type="text" formControlName="job" placeholder="Professione *">
+          </label>
+          <span id="job" class="focus-input"></span>
         </div>
         <div class="wrap-input" fxLayoutAlign="center center">
-          <input class="form-checkbox" type="checkbox" name="privacy-checkbox" id="privacy-checkbox"
+          <input class="form-checkbox" type="checkbox" formControlName="privacycheckbox" id="privacycheckbox"
                  value="Presto il consenso al trattamento dei miei dati">
-          <label for="privacy-checkbox">
-            <span>Presto il consenso al trattamento dei miei dati <a href="https://antonellozitelli.it/privacy-policy">(Privacy policy)</a></span>
+          <label for="privacycheckbox">
+            <span style="color:red">* </span><span>Presto il consenso al trattamento dei miei dati <a href="https://antonellozitelli.it/privacy-policy">(Privacy policy)</a></span>
           </label>
         </div>
+        <span id="form-err-message"></span>
         <div id="form-btn-container">
-          <button id="form-btn">Scarica l'anteprima</button>
+            <button type="submit" id="form-btn" [disabled]="!formData.valid">Scarica l'anteprima</button>
         </div>
       </div>
     </form>
