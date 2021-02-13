@@ -14,7 +14,7 @@ export interface IFormHubspot {
     }
   ];
   context: {
-    hutk: string,
+    hutk?: string,
     pageUri: string,
     pageName: string
   };

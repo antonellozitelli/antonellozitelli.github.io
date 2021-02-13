@@ -1,24 +1,65 @@
-<section>
-  <div fxLayout="row" fxShow.lt-md="false" fxLayoutAlign="center center">
-    <img id="az-logo" src="https://antonellozitelli.it/assets/images/logo.webp" alt="Antonello-Zitelli-logo">
-    <h1 id="title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
-  </div>
-</section>
+<div class="wow animate__animated animate__fadeInDownBig" fxLayout="row" fxShow.lt-md="false" fxLayoutAlign="center center">
+  <img id="az-logo" src="https://antonellozitelli.it/assets/images/logo.webp" alt="Antonello-Zitelli-logo">
+  <h1 id="title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
+</div>
 
-<!--<section>
-  <div id="book-container" fxLayout="column" fxLayoutAlign="center center">
-    <h1 id="book-title">Il primo "manuale" pratico di comunicazione politica e istituzionale</h1>
-    <div fxLayout="row" fxLayoutAlign="center center">
-      <img id="book-img" src="assets/images/copertina-libro.jpg" alt="libro-comunica-da-leader">
+<button (click)="setCookie()">set cookie</button>
+<button (click)="unsetCookie()">unset cookie</button>
+
+<section id="form-section">
+  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap.gt-xs="50px">
+    <img fxShow.lt-md="false" class="characters wow animate__animated animate__bounceInLeft" src="assets/images/business-human-2.png"
+         alt="business-man-3d-characters">
+    <app-form class="wow animate__animated animate__backInDown" *ngIf="!cookieService.check('book-preview-access')"></app-form>
+    <div *ngIf="cookieService.check('book-preview-access')" id="book-access-main-container">
+      <div class="wow animate__animated animate__bounceIn" id="book-access-container" fxLayout="column" fxLayoutAlign="center center">
+        <h1 id="book-access-title">🥳 Congratulazioni 🥳</h1>
+        <h2 id="book-access-subtitle">Hai ottenutto l'accesso a 2 capitoli in anteprima</h2>
+        <p id="book-access-description">Il tuo accesso scadrà tra 15 giorni</p>
+        <button class="wow animate__animated animate__bounceIn" id="book-access-btn">Scarica il pdf</button>
+      </div>
     </div>
-    <h2 id="book-title">Esempi, tecniche e strumenti operativi</h2>
-  </div>
-</section>-->
-
-<section style="margin-top: 50px; margin-bottom: 50px">
-  <div fxLayout="row" fxLayoutAlign="center center" fxLayoutGap="50px">
-    <img class="character" src="assets/images/business-human-2.png" alt="business-man-3d-characters">
-    <app-form></app-form>
-    <img class="character" src="assets/images/business-human.png" alt="business-man-3d-character">
+    <img fxShow.lt-md="false" class="characters wow animate__animated animate__bounceInRight" src="assets/images/business-human.png" alt="business-man-3d-character">
   </div>
 </section>
+
+<section>
+  <div id="book-info-container" fxLayout="column" fxLayoutAlign="center center">
+    <h1 id="book-info-title" class="wow animate__animated animate__bounceInLeft">Comunica da Leader</h1>
+    <h2 id="book-info-subtitle" class="wow animate__animated animate__bounceInRight">Il primo "manuale" pratico di comunicazione politica e istituzionale</h2>
+    <p class="wow animate__animated animate__bounceInUp">Politici, manager e professionisti sono sempre più spesso tenuti a <strong>parlare in pubblico</strong>,
+      rilasciare interviste radiofoniche e televisive, scrivere dichiarazioni da inviare ai media, presentare progetti a
+      persone interne ed esterne alla propria organizzazione. <strong>“Comunica da leader”</strong> è <strong>manuale
+        pratico</strong> dedicato alla comunicazione politica e istituzionale. Il volume spiega quali sono i meccanismi
+      che regolano la comunicazione, cos’è una notizia, come si scrive un comunicato stampa, come si prepara un
+      discorso e come si organizza un evento. Il tutto con <strong>esempi pratici</strong> e un linguaggio estremamente
+      semplice.</p>
+  </div>
+</section>
+
+<section>
+  <div class="about" fxLayout="column" fxLayoutAlign="start center">
+    <img id="avatar" class="wow animate__animated animate__bounceInLeft"
+         src="https://antonellozitelli.it/assets/images/circle_icon-profilo.webp" alt="Foto di Antonello Zitelli">
+    <h1 id="title-about" class="wow animate__animated animate__bounceInRight">L'AUTORE</h1>
+  </div>
+  <div class="about-textbox" fxLayout="column" fxLayoutAlign="center center">
+    <p class="about-paragraph wow animate__animated animate__bounceInUp">Autore dei volumi “Comunica da leader”,
+      “Sono solo salvinate” e “Parole di buon senso”. Sono un giornalista professionista, specializzato
+      in comunicazione politica e
+      istituzionale. Laureato in scienze della comunicazione all’Università degli studi di Cassino, ho seguito corsi di
+      aggiornamento alla LUISS Management e alla SDA Bocconi.&nbsp;Ho già scritto per il quotidiano <strong
+        class="black">Libero</strong> e collaborato con <strong class="black">Il Tempo</strong>, La Notizia Giornale,
+      Romauno tv, Rttr tv, D+, Odeon tv, Telesiciliacolor-Rete 8, Teleradio del Mediterraneo, SMAU Sicilia, Mondimpresa
+      e Confindustria Sicilia, Comune di Catania, Provincia regionale di Catania.<br><br>Sono stato <strong
+        class="black">Spin doctor e ghost writer</strong> di parlamentari e
+      amministratori pubblici. Ho già redatto strategie di comunicazione per conto di imprese, istituzioni, manager e
+      personaggi pubblici. Sono stato docente a contratto di comunicazione e giornalismo per la Facoltà di Lettere e
+      filosofia dell'università di Catania. Ho collaborato con il gruppo <strong class="black">Focus management
+        school</strong> e <strong class="black">Metaconsulting</strong>.</p>
+  </div>
+</section>
+
+<footer class="footer" fxLayout="row" fxLayoutAlign="center center">
+  <p id="footer-text">Copyright © 2021 Antonello Zitelli <br> P.IVA: 05793710871</p>
+</footer>

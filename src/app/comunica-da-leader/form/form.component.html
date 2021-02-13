@@ -1,43 +1,51 @@
-<div id="form-container">
-  <div fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="12px">
-    <h1 id="form-title">Migliora la tua comunicazione</h1>
-    <h2 id="form-subtitle">Una marcia in più nella vita e nel lavoro</h2>
-    <h3 id="form-description">Diventa un abile comunicatore creando il tuo stile comunicativo. Compilando il form avrai
-      l'accesso esclusivo a 2 capitoli del libro.</h3>
-  </div>
-  <div>
-    <form [formGroup]="formData" (ngSubmit)="sendData(formData)">
-      <div fxLayout="column" fxLayoutAlign="center center">
-        <div class="wrap-input">
-          <label (focusout)="checkForm('fullname')">
-            <input class="form-input" type="text" formControlName="fullname" placeholder="Nome completo *">
-          </label>
-          <span id="fullname" class="focus-input"></span>
+<div id="main-container">
+  <div id="form-container">
+    <div class="wow animate__animated animate__bounceIn animate__delay-1s" fxLayout="column" fxLayoutAlign="center center" fxLayoutGap="12px">
+      <h1 id="form-title">Migliora la tua comunicazione</h1>
+      <img fxShow.lt-md="false" src="assets/images/copertina-libro.jpg" alt="comunica-da-leader-copertina-libro"
+           width="20%">
+      <h2 id="form-subtitle" fxShow.xs="false">Una marcia in più nella vita e nel lavoro</h2>
+      <h3 id="form-description">Diventa un abile comunicatore creando il tuo stile comunicativo. Compilando il form
+        avrai l'accesso esclusivo a 2 capitoli del libro.</h3>
+    </div>
+    <div>
+      <form [formGroup]="formData" (ngSubmit)="sendData(formData)">
+        <div fxLayout="column" fxLayoutAlign="center center">
+          <div class="wrap-input wow animate__animated animate__bounceInLeft animate__delay-1s">
+            <label (focusout)="checkForm('fullname')">
+              <input class="form-input" type="text" formControlName="fullname" placeholder="Nome completo *">
+            </label>
+            <span id="fullname" class="focus-input"></span>
+          </div>
+          <div class="wrap-input wow animate__animated animate__bounceInRight animate__delay-1s">
+            <label (focusout)="checkForm('email')">
+              <input class="form-input" type="text" formControlName="email" placeholder="Email *">
+            </label>
+            <span id="email" class="focus-input"></span>
+          </div>
+          <div class="wrap-input wow animate__animated animate__bounceInLeft animate__delay-1s">
+            <label (focusout)="checkForm('job')">
+              <input class="form-input" type="text" formControlName="job" placeholder="Professione *">
+            </label>
+            <span id="job" class="focus-input"></span>
+          </div>
+          <div class="wrap-input wow animate__animated animate__bounceInRight animate__delay-1s" fxLayoutAlign="center center">
+            <input class="form-checkbox" type="checkbox" formControlName="privacycheckbox" id="privacycheckbox"
+                   value="Autorizzo il trattamento dei miei dati personali">
+            <label for="privacycheckbox">
+              <span style="margin-left:5px; color:red">* </span><span id="privacy-text">Autorizzo il trattamento dei miei dati personali <a
+              id="privacy-link" href="https://antonellozitelli.it/privacy-policy">(Privacy policy)</a></span>
+            </label>
+          </div>
+          <span id="form-err"></span>
+          <span id="form-send-err">Qualcosa è andato storto durante l'invio dei dati. Riprova</span>
+          <img id="book-img" fxShow.gt-xs="false" src="assets/images/copertina-libro.jpg"
+               alt="comunica-da-leader-copertina-libro" width="30%">
+          <div id="form-btn-container">
+            <button class="wow animate__animated animate__bounceIn animate__delay-1s" type="submit" id="form-btn" [disabled]="!formData.valid">Scarica l'anteprima</button>
+          </div>
         </div>
-        <div class="wrap-input">
-          <label (focusout)="checkForm('email')">
-            <input class="form-input" type="text"formControlName="email" placeholder="Email *">
-          </label>
-          <span id="email" class="focus-input"></span>
-        </div>
-        <div class="wrap-input">
-          <label (focusout)="checkForm('job')">
-            <input class="form-input" type="text" formControlName="job" placeholder="Professione *">
-          </label>
-          <span id="job" class="focus-input"></span>
-        </div>
-        <div class="wrap-input" fxLayoutAlign="center center">
-          <input class="form-checkbox" type="checkbox" formControlName="privacycheckbox" id="privacycheckbox"
-                 value="Presto il consenso al trattamento dei miei dati">
-          <label for="privacycheckbox">
-            <span style="color:red">* </span><span>Presto il consenso al trattamento dei miei dati <a href="https://antonellozitelli.it/privacy-policy">(Privacy policy)</a></span>
-          </label>
-        </div>
-        <span id="form-err-message"></span>
-        <div id="form-btn-container">
-            <button type="submit" id="form-btn" [disabled]="!formData.valid">Scarica l'anteprima</button>
-        </div>
-      </div>
-    </form>
+      </form>
+    </div>
   </div>
 </div>

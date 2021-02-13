@@ -1,30 +1,241 @@
+h1, h2, h3 {
+  margin: 0
+}
+
+input, button {
+  outline: none;
+  border: none;
+}
+
+strong {
+  color: black;
+}
+
 #az-logo {
-  width: 5%;
+  width: 3%;
   height: auto;
   padding-right: 1%;
 }
 
 #title {
-  font-size: 32pt;
+  font-size: 26pt;
   font-family: "Times New Roman", Times, serif;
   font-style: italic;
   font-weight: 500;
   color: #297f00;
 }
 
-#book-container {
-  background-color: #66999B;
+#form-section {
+  margin-bottom: 30px;
 }
 
-#book-title {
-  font-size: 25pt;
+.characters {
+  width: 20%;
+}
+
+#book-access-container {
+  width: 700px;
+  background: white;
+  border-radius: 10px;
+  overflow: hidden;
+  padding: 50px 80px 50px 80px;
+  box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 3px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
+#book-access-title {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 20pt;
+  margin-bottom: 10px;
+  color: #4861AD;
+}
+
+#book-access-subtitle {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 18pt;
+  color: #4861AD;
+}
+
+#book-access-description {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16pt;
+  color: #4861AD;
+}
+
+#book-access-btn {
+  min-width: 200px;
+  height: 50px;
+  background-color: #2B3A67;
+  border-radius: 21px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 14px;
+  color: #fff;
+  line-height: 1.2;
+  text-transform: uppercase;
+  padding: 5px 20px 0;
+  -webkit-transition: all 0.4s;
+  -o-transition: all 0.4s;
+  -moz-transition: all 0.4s;
+  transition: all 0.4s;
+  box-shadow: 0 10px 30px 0 #6F94AE;
+  -moz-box-shadow: 0 10px 30px 0 #6F94AE;
+  -webkit-box-shadow: 0 10px 30px 0 #6F94AE;
+  -o-box-shadow: 0 10px 30px 0 #6F94AE;
+}
+
+#book-access-btn:hover:enabled {
+  cursor: pointer;
+  background-color: #4861AD;
+  box-shadow: 0 10px 30px 0 #496A81;
+  -moz-box-shadow: 0 10px 30px 0 #496A81;
+  -webkit-box-shadow: 0 10px 30px 0 #496A81;
+  -o-box-shadow: 0 10px 30px 0 #496A81;
+}
+
+#book-info-container {
+  background-color: rgb(241, 237, 237);
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+
+#book-info-title {
+  font-size: 24pt;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: bolder;
+  margin-bottom: 10px;
+}
+
+#book-info-subtitle {
+  font-size: 18pt;
+  font-family: Source Sans Pro, sans-serif;
+  font-weight: 800;
+  margin-bottom: 15px;
+}
+
+#book-info-container p {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16pt;
+  text-align: justify;
+  width: 50%;
+  color: rgb(122, 122, 122);
+}
+
+.about {
+  background-image: url("../../assets/images/about-background.webp");
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding-bottom: 4%;
+}
+
+#avatar {
+  padding-top: 5%;
+  width: 12%;
+  height: auto;
+}
+
+#title-about {
+  font-size: 30pt;
+  letter-spacing: 4px;
+  font-weight: bold;
   color: white;
+  text-shadow: 4px 4px 15px black;
 }
 
-.character {
-  width: 20%;
+.about-textbox {
+  background-color: rgb(241, 237, 237);
 }
 
-#book-img {
-  width: 20%;
+.about-paragraph {
+  font-family: Source Sans Pro, sans-serif;
+  font-size: 16pt;
+  text-align: justify;
+  width: 50%;
+  color: rgb(122, 122, 122);
+}
+
+.footer {
+  background-color: #2b2b2b;
+}
+
+#footer-text {
+  font-weight: bold;
+  text-align: center;
+  font-size: 12pt;
+  color: rgb(122, 122, 122);
+}
+
+@media only screen and (max-width: 959px) {
+  ::ng-deep body {
+    margin: 0;
+    background-image: url("src/assets/images/book-landing-background.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+  }
+
+  #form-section {
+    margin: 40px 0;
+  }
+
+  #book-access-main-container {
+    width: 90%;
+    margin-right: 5%;
+    margin-left: 5%;
+  }
+
+  #book-access-container {
+    width: auto;
+    padding: 50px 20px 50px 20px;
+  }
+
+  #book-access-title {
+    font-size: 22pt;
+    text-align: center;
+  }
+
+  #book-access-subtitle {
+    font-size: 18pt;
+    text-align: center;
+  }
+
+  #book-access-description {
+    font-size: 16pt;
+    text-align: center;
+  }
+
+  #book-info-title {
+    font-size: 20pt;
+    text-align: center;
+  }
+
+  #book-info-subtitle {
+    font-size: 16pt;
+    text-align: center;
+    width: 80%;
+  }
+
+  #book-info-container p {
+    font-size: 14pt;
+    text-align: justify;
+    width: 80%;
+  }
+
+  #avatar {
+    width: 30%;
+    height: auto;
+  }
+
+  #title-about {
+    font-size: 24pt;
+    letter-spacing: 2px;
+  }
+
+  .about-paragraph {
+    font-size: 14pt;
+    text-align: justify;
+    width: 80%;
+  }
 }

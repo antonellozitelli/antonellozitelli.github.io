@@ -22,6 +22,7 @@
             "assets": [
               "src/favicon.ico",
               "src/sitemap.xml",
+              "src/anteprima-libro.pdf",
               "src/assets"
             ],
             "styles": [

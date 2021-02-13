@@ -1,22 +1,28 @@
-import { Component, OnInit } from '@angular/core';
-import { FormService } from '../../shared/services/form.service';
-import { IFormHubspot } from '../../shared/models/hubspot';
-import { CookieService } from 'ngx-cookie-service';
-import { FormBuilder, FormControl, FormGroup, Validators } from '@angular/forms';
+import {Component, OnDestroy, OnInit} from '@angular/core';
+import {FormService} from '../../shared/services/form.service';
+import {IFormHubspot, IResponseHubspot} from '../../shared/models/hubspot';
+import {CookieService} from 'ngx-cookie-service';
+import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
+import {Subscription} from 'rxjs';
 
 @Component({
   selector: 'app-form',
   templateUrl: './form.component.html',
   styleUrls: ['./form.component.css']
 })
-export class FormComponent implements OnInit {
+export class FormComponent implements OnInit, OnDestroy {
   formData: FormGroup;
-  clicked: false;
+  subscription: Subscription;
 
-  constructor(private formBuilder: FormBuilder, private formService: FormService, private cookieService: CookieService) { }
+  constructor(private formBuilder: FormBuilder, private formService: FormService, private cookieService: CookieService) {
+  }
 
   ngOnInit(): void {
     this.formData = this.buildForm();
+  }
+
+  ngOnDestroy(): void {
+    this.subscription.unsubscribe();
   }
 
   sendData(formdata: FormGroup): void {
@@ -36,19 +42,34 @@ export class FormComponent implements OnInit {
         }
       ],
       context: {
-        hutk: this.cookieService.get('hubspotutk'),
         pageUri: 'antonellozitelli.it/comunica-da-leader',
         pageName: 'Comunica da Leader'
       },
       legalConsentOptions: {
         consent: {
           consentToProcess: formdata.value.privacycheckbox,
-          text: 'Presto il consenso al trattamento dei miei dati'
+          text: 'Autorizzo il trattamento dei miei dati personali'
         }
       }
     };
-    console.log(data);
-    /*this.formService.submitForm(data);*/
+    if (this.cookieService.check('hubspotutk')) {
+      data.context = {
+        hutk: this.cookieService.get('hubspotutk'),
+        pageUri: 'antonellozitelli.it/comunica-da-leader',
+        pageName: 'Comunica da Leader'
+      };
+    }
+    this.subscription = this.formService.submitForm(data).subscribe((response: IResponseHubspot) => {
+        if (response.inlineMessage === 'Grazie per aver inviato il modulo.') {
+          this.cookieService.set('book-preview-access', 'true', 15);
+          window.location.reload();
+        } else {
+          this.handleError();
+        }
+      },
+      (error) => {
+        this.handleError();
+      });
   }
 
   buildForm(): FormGroup {
@@ -65,10 +86,18 @@ export class FormComponent implements OnInit {
   checkForm(id): void {
     if (this.formData.get(id).hasError('required') || this.formData.get(id).hasError('email')) {
       document.getElementById(id).className = 'focus-input invalid-input';
-      document.getElementById('form-err-message').innerHTML = 'Controlla i campi evidenziati';
+      document.getElementById('form-err').innerHTML = 'Controlla i campi evidenziati';
     } else {
-      document.getElementById('form-err-message').innerHTML = '';
+      document.getElementById('form-err').innerHTML = '';
       document.getElementById(id).className = 'focus-input';
     }
+  }
+
+  handleError(): void {
+    const formsenderr = document.getElementById('form-send-err');
+    formsenderr.className = 'show';
+    setTimeout(() => {
+      formsenderr.className = formsenderr.className.replace('show', '');
+    }, 5000);
   }
 }
