@@ -46,7 +46,7 @@ export class FormComponent implements OnInit, OnDestroy {
         }
       ],
       context: {
-        pageUri: 'antonellozitelli.it/comunica-da-leader',
+        pageUri: 'antonellozitelli.it/comunicadaleader',
         pageName: 'Comunica da Leader'
       },
       legalConsentOptions: {
@@ -59,7 +59,7 @@ export class FormComponent implements OnInit, OnDestroy {
     if (this.cookieService.check('hubspotutk')) {
       data.context = {
         hutk: this.cookieService.get('hubspotutk'),
-        pageUri: 'antonellozitelli.it/comunica-da-leader',
+        pageUri: 'antonellozitelli.it/comunicadaleader',
         pageName: 'Comunica da Leader'
       };
     }

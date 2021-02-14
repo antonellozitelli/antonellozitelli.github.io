@@ -9,7 +9,7 @@ import {PdfViewerComponent} from './comunica-da-leader/pdf-viewer/pdf-viewer.com
 
 const routes: Routes = [
   { path: '', component: HomeComponent },
-  { path: 'comunica-da-leader', component: ComunicaDaLeaderComponent},
+  { path: 'comunicadaleader', component: ComunicaDaLeaderComponent},
   { path: 'anteprima-libro', component: PdfViewerComponent},
   { path: 'privacy-policy', component: PrivacyPolicyComponent},
   { path: '404', component: PageNotFoundComponent },
