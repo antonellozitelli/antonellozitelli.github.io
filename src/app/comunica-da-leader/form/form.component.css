@@ -49,6 +49,18 @@ input:focus {
   color: #4861AD;
 }
 
+#book-img-desktop {
+  width: 20%;
+}
+
+#book-img-desktop, #book-img-mobile {
+  border-radius: 10px;
+  box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  -webkit-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+  -o-box-shadow: 0 5px 20px 0 rgba(0, 0, 0, 0.1);
+}
+
 #form-subtitle {
   font-size: 18pt;
   color: #4861AD;
@@ -223,7 +235,7 @@ input[type=checkbox] {
     margin-left: 15px;
   }
 
-  #book-img {
+  #book-img-mobile {
     margin-top: -20px;
   }
 

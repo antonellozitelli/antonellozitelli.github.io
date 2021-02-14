@@ -10,10 +10,10 @@ export class AppComponent implements OnInit {
   popup = {
     palette: {
       popup: {
-        background: '#0089f3',
+        background: '#4861AD',
       },
       button: {
-        background: '#7cda24',
+        background: '#D95830',
         text: '#ffffff',
       },
     },
