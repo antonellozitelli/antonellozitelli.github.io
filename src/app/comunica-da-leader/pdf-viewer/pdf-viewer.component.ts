@@ -7,7 +7,7 @@ import { CookieService } from 'ngx-cookie-service';
   styleUrls: ['./pdf-viewer.component.css']
 })
 export class PdfViewerComponent implements OnInit {
-  pdfsrc = 'https://antonellozitelli.it/anteprima-libro.pdf';
+  pdfsrc = 'https://antonellozitelli.it/assets/anteprima-libro.pdf';
 
   constructor(public cookieService: CookieService) { }
 
