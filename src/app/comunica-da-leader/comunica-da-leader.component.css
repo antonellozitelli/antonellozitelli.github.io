@@ -20,6 +20,7 @@ strong {
   width: 3%;
   height: auto;
   padding-right: 1%;
+  cursor: pointer;
 }
 
 #title {
@@ -28,6 +29,9 @@ strong {
   font-style: italic;
   font-weight: 500;
   color: #D95830;
+  user-select: none;
+  -webkit-user-select: none;
+  -moz-user-select: none;
 }
 
 #form-section {

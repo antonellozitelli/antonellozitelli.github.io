@@ -1,9 +1,10 @@
-import {Component, OnDestroy, OnInit} from '@angular/core';
+import {Component, Input, OnDestroy, OnInit} from '@angular/core';
 import {FormService} from '../../shared/services/form.service';
 import {IFormHubspot, IResponseHubspot} from '../../shared/models/hubspot';
 import {CookieService} from 'ngx-cookie-service';
 import {FormBuilder, FormControl, FormGroup, Validators} from '@angular/forms';
 import {Subscription} from 'rxjs';
+import {ICopy} from '../../shared/models/copy';
 
 @Component({
   selector: 'app-form',
@@ -11,6 +12,7 @@ import {Subscription} from 'rxjs';
   styleUrls: ['./form.component.css']
 })
 export class FormComponent implements OnInit, OnDestroy {
+  @Input() copy: ICopy;
   formData: FormGroup;
   subscription: Subscription;
 
@@ -87,7 +89,7 @@ export class FormComponent implements OnInit, OnDestroy {
   checkForm(id): void {
     if (this.formData.get(id).hasError('required') || this.formData.get(id).hasError('email')) {
       document.getElementById(id).className = 'focus-input invalid-input';
-      document.getElementById('form-err').innerHTML = 'Controlla i campi evidenziati';
+      document.getElementById('form-err').innerHTML = 'Correggi i campi evidenziati';
     } else {
       document.getElementById('form-err').innerHTML = '';
       document.getElementById(id).className = 'focus-input';

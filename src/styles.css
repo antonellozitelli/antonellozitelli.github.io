@@ -3,13 +3,13 @@ body {
   font-weight: normal;
 }
 
-a, button {
+button, img {
   user-select: none;
   -webkit-user-select: none;
   -moz-user-select: none;
 }
 
-button {
+button, img {
   outline: none;
   border: none;
 }

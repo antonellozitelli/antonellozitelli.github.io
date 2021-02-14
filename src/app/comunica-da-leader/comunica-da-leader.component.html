@@ -1,6 +1,6 @@
 <div class="wow animate__animated animate__fadeInDownBig" fxLayout="row" fxShow.lt-md="false"
      fxLayoutAlign="center center">
-  <img id="az-logo" src="https://antonellozitelli.it/assets/images/logo.webp" alt="Antonello-Zitelli-logo">
+  <img id="az-logo" src="https://antonellozitelli.it/assets/images/logo.webp" alt="Antonello-Zitelli-logo" routerLink="/">
   <h1 id="title">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
 </div>
 
@@ -9,7 +9,7 @@
     <img fxShow.lt-md="false" class="characters wow animate__animated animate__bounceInLeft"
          src="assets/images/businessman-2.webp"
          alt="business-man-3d-characters">
-    <app-form class="wow animate__animated animate__backInDown"
+    <app-form class="wow animate__animated animate__backInDown" [copy]="copy"
               *ngIf="!cookieService.check('book-preview-access')"></app-form>
     <div *ngIf="cookieService.check('book-preview-access')" id="book-access-main-container">
       <div class="wow animate__animated animate__bounceIn" id="book-access-container" fxLayout="column"
@@ -34,7 +34,7 @@
 
 <section>
   <div id="book-info-container" fxLayout="column" fxLayoutAlign="center center">
-    <h1 id="book-info-title" class="wow animate__animated animate__bounceInLeft">Comunica da Leader</h1>
+    <h1 id="book-info-title" class="wow animate__animated animate__bounceInLeft">Comunica da leader</h1>
     <h2 id="book-info-subtitle" class="wow animate__animated animate__bounceInRight">Il primo "manuale" pratico di
       comunicazione politica e istituzionale</h2>
     <p class="wow animate__animated animate__bounceInUp">Politici, manager e professionisti sono sempre più spesso
@@ -52,7 +52,7 @@
   <div class="about" fxLayout="column" fxLayoutAlign="start center">
     <img id="avatar" class="wow animate__animated animate__bounceInLeft"
          src="https://antonellozitelli.it/assets/images/circle_icon-profilo.webp" alt="Foto di Antonello Zitelli">
-    <h1 id="title-about" class="wow animate__animated animate__bounceInRight">L'AUTORE</h1>
+    <h1 id="title-about" class="wow animate__animated animate__bounceInRight">CHI SONO</h1>
   </div>
   <div class="about-textbox" fxLayout="column" fxLayoutAlign="center center">
     <p class="about-paragraph wow animate__animated animate__bounceInUp"> Sono un giornalista professionista,
