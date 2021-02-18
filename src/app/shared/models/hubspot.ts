@@ -11,6 +11,10 @@ export interface IFormHubspot {
     {
       name: string,
       value: string
+    },
+    {
+      name: string,
+      value: string
     }
   ];
   context: {

@@ -11,13 +11,21 @@
         libro.</h3>
     </div>
     <div>
-      <form [formGroup]="formData" (ngSubmit)="sendData(formData)">
-        <div fxLayout="column" fxLayoutAlign="center center">
-          <div class="wrap-input wow animate__animated animate__bounceInLeft animate__delay-1s">
-            <label (focusout)="checkForm('fullname')">
-              <input class="form-input" type="text" formControlName="fullname" placeholder="Nome completo *">
-            </label>
-            <span id="fullname" class="focus-input"></span>
+      <form [formGroup]="formData" (ngSubmit)="sendData(formData)" fxLayoutAlign="center center">
+        <div id="inputs-container" fxLayout="column">
+          <div fxLayout="row" fxLayoutAlign="space-between center" fxLayoutGap.gt-xs="20px" fxLayoutGap.xs="15px">
+            <div class="wrap-input wow animate__animated animate__bounceInLeft animate__delay-1s">
+              <label (focusout)="checkForm('name')">
+                <input class="form-input" type="text" formControlName="name" placeholder="Nome *">
+              </label>
+              <span id="name" class="focus-input"></span>
+            </div>
+            <div class="wrap-input wow animate__animated animate__bounceInRight animate__delay-1s">
+              <label (focusout)="checkForm('surname')">
+                <input class="form-input" type="text" formControlName="surname" placeholder="Cognome *">
+              </label>
+              <span id="surname" class="focus-input"></span>
+            </div>
           </div>
           <div class="wrap-input wow animate__animated animate__bounceInRight animate__delay-1s">
             <label (focusout)="checkForm('email')">
@@ -40,11 +48,13 @@
               id="privacy-link" routerLink="/privacy-policy">(Privacy policy)</a></span>
             </label>
           </div>
+          <div fxLayout="column" fxLayoutAlign="center center">
           <span id="form-err"></span>
           <span id="form-send-err">Qualcosa è andato storto durante l'invio dei dati. Riprova</span>
-          <img id="book-img-mobile" fxShow.gt-xs="false" src="assets/images/copertina-libro.webp"
-               alt="comunica-da-leader-copertina-libro" width="30%">
-          <div id="form-btn-container">
+            <img id="book-img-mobile" fxShow.gt-xs="false" src="assets/images/copertina-libro.webp"
+                 alt="comunica-da-leader-copertina-libro" width="30%">
+          </div>
+          <div id="form-btn-container" fxLayoutAlign="center center">
             <button class="btn wow animate__animated animate__bounceIn animate__delay-1s" type="submit" id="form-btn"
                     [disabled]="!formData.valid">Ottieni l'accesso
             </button>

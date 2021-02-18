@@ -33,8 +33,12 @@ export class FormComponent implements OnInit, OnDestroy {
     const data: IFormHubspot = {
       fields: [
         {
-          name: 'fullname',
-          value: formdata.value.fullname
+          name: 'firstname',
+          value: formdata.value.name
+        },
+        {
+          name: 'lastname',
+          value: formdata.value.surname
         },
         {
           name: 'email',
@@ -64,9 +68,14 @@ export class FormComponent implements OnInit, OnDestroy {
       };
     }
     this.subscription = this.formService.submitForm(data).subscribe((response: IResponseHubspot) => {
-        if (response.inlineMessage === 'Grazie per aver inviato il modulo.') {
+        if (response.inlineMessage === '<p>Grazie per aver inviato il modulo.</p>') {
           this.cookieService.set('book-preview-access', 'true', 15);
-        } else {
+        } else if (response.inlineMessage === 'Grazie per aver inviato il modulo.') {
+          this.cookieService.set('book-preview-access', 'true', 15);
+        } else if (!response.errors) {
+          this.cookieService.set('book-preview-access', 'true', 15);
+        }
+        else {
           this.handleError();
         }
       },
@@ -77,7 +86,8 @@ export class FormComponent implements OnInit, OnDestroy {
 
   buildForm(): FormGroup {
     return this.formBuilder.group({
-      fullname: new FormControl('', [Validators.required]),
+      name: new FormControl('', [Validators.required]),
+      surname: new FormControl('', [Validators.required]),
       email: new FormControl('', [
         Validators.compose([Validators.required, Validators.email]),
       ]),

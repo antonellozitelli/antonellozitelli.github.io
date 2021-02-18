@@ -77,8 +77,12 @@ input:focus {
   margin-bottom: 30px;
 }
 
-.wrap-input {
+#inputs-container {
   width: 70%;
+}
+
+.wrap-input {
+  width: 100%;
   position: relative;
   background-color: white;
   border-radius: 20px;
@@ -87,7 +91,7 @@ input:focus {
 
 .form-input {
   display: block;
-  width: 100%;
+  width: 85%;
   background: transparent;
   font-family: Source Sans Pro, sans-serif;
   font-weight: bold;
@@ -209,13 +213,21 @@ input[type=checkbox] {
     margin-bottom: 30px;
   }
 
-  .form-input {
-    font-size: 10pt;
+  #inputs-container {
+    width: 90%;
   }
 
   .wrap-input {
-    width: 90%;
     margin-bottom: 15px;
+  }
+
+  .form-input {
+    font-size: 16px;
+  }
+
+  input.form-input {
+    height: 50px;
+    padding: 0 20px 0 20px;
   }
 
   input[type=checkbox] {
