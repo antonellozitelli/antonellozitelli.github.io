@@ -15,7 +15,7 @@
   font-size: 22pt;
 }
 
-#book-access-btn, #book-buy-btn {
+#book-access-btn, .book-buy-btn {
   min-width: 200px;
   height: 50px;
   background-color: #2B3A67;
@@ -24,12 +24,12 @@
   font-size: 14px;
 }
 
-#book-buy-btn {
+.book-buy-btn, .book-buy-btn-banner {
   background-color: #D95830;
   text-align: center;
 }
 
-#book-access-btn:hover:enabled {
+#book-access-btn:hover {
   cursor: pointer;
   background-color: #4861AD;
   box-shadow: 0 10px 30px 0 #496A81;
@@ -38,13 +38,43 @@
   -o-box-shadow: 0 10px 30px 0 #496A81;
 }
 
-#book-buy-btn:hover:enabled {
+.book-buy-btn:hover {
   cursor: pointer;
   background-color: #DE6E4B;
   box-shadow: 0 10px 30px 0 #D95830;
   -moz-box-shadow: 0 10px 30px 0 #D95830;
   -webkit-box-shadow: 0 10px 30px 0 #D95830;
   -o-box-shadow: 0 10px 30px 0 #D95830;
+}
+
+#buy-banner {
+  position: fixed;
+  top: 0;
+  right: 0;
+  width: 100%;
+  height: 70px;
+  background-color: #4861AD;
+  z-index: 1;
+}
+
+.book-buy-btn-banner {
+  height: 45px;
+  background-color: #D95830;
+  border-radius: 21px;
+  font-family: Josefin Sans, sans-serif;
+  font-size: 12px;
+  box-shadow: 0 8px 15px 0 #6F94AE;
+  -moz-box-shadow: 0 8px 15px 0 #6F94AE;
+  -webkit-box-shadow: 0 8px 15px 0 #6F94AE;
+  -o-box-shadow: 0 8px 15px 0 #6F94AE;
+}
+
+.book-buy-btn-banner:hover {
+  background-color: #DE6E4B;
+  box-shadow: 0 8px 15px 0 #D95830;
+  -moz-box-shadow: 0 8px 15px 0 #D95830;
+  -webkit-box-shadow: 0 8px 15px 0 #D95830;
+  -o-box-shadow: 0 8px 15px 0 #D95830;
 }
 
 @media only screen and (max-width: 959px) {
@@ -70,7 +100,7 @@
     text-align: center;
   }
 
-  #book-access-btn, #book-buy-btn {
+  #book-access-btn, .book-buy-btn {
     font-size: 12px;
   }
 }

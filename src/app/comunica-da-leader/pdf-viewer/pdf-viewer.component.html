@@ -1,3 +1,12 @@
+<div id="buy-banner" fxLayoutAlign="center center" *ngIf="this.cookieService.check('book-preview-access')">
+  <div fxLayout="column">
+    <a href="https://www.amazon.it/dp/1717825575/" target="_blank">
+      <button class="btn book-buy-btn-banner wow animate__animated animate__bounceIn">Acquista il libro completo
+      </button>
+    </a>
+  </div>
+</div>
+
 <pdf-viewer *ngIf="this.cookieService.check('book-preview-access')"
             [src]="pdfsrc"
             [render-text]="false"
@@ -15,9 +24,9 @@
       <button class="btn wow animate__animated animate__bounceIn" id="book-access-btn" routerLink="/comunicadaleader">
         Ottieni l'accesso
       </button>
-      <a href="https://www.amazon.it/Comunica-leader-comunicazione-politica-istituzionale/dp/1717825575/"
+      <a href="https://www.amazon.it/dp/1717825575/"
          target="_blank">
-        <button class="btn wow animate__animated animate__bounceIn" id="book-buy-btn">Acquista il libro completo
+        <button class="btn book-buy-btn wow animate__animated animate__bounceIn">Acquista il libro completo
         </button>
       </a>
     </div>
