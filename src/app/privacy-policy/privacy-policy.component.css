@@ -25,16 +25,21 @@ section {
   padding-bottom: 15px;
 }
 
-#title-container {
+.title-container {
  text-align: center;
 }
 
-#title-container>h1, h2 {
+.title-container>h2 {
   font-size: 20pt;
   margin: 10px;
 }
 
-a {
+.title-container>h1 {
+  font-size: 28pt;
+  margin: 10px;
+}
+
+#privacy-email {
   font-weight: bold;
   color: white;
   text-decoration: none;

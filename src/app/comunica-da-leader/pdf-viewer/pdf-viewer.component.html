@@ -13,7 +13,7 @@
             [fit-to-page]="true"
             [original-size]="true"
             [show-borders]="true"
-            style="display: block;"
+            style="position: absolute; top: 70px; right: 0; bottom: 0; left: 0"
 ></pdf-viewer>
 
 <section *ngIf="!this.cookieService.check('book-preview-access')" fxLayoutAlign="center center">

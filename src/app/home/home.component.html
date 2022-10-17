@@ -1,7 +1,8 @@
 <section>
   <div fxLayout="row" fxShow.lt-md="false" fxLayoutAlign="center center">
     <img id="home-logo" src="https://antonellozitelli.it/assets/images/logo.webp" alt="AZ-logo">
-    <h1 id="home-title" routerLink="comunicadaleader">Per ogni cosa da comunicare c'è sempre il modo giusto per farlo!</h1>
+    <h1 id="home-title" routerLink="comunicadaleader">Per ogni cosa da comunicare c'è sempre il modo giusto per
+      farlo!</h1>
   </div>
 </section>
 
@@ -12,21 +13,19 @@
     <h1 id="title-about" class="wow animate__animated animate__bounceInLeft">CHI SONO</h1>
   </div>
   <div class="about-textbox" fxLayout="column" fxLayoutAlign="center center">
-    <p class="about-paragraph wow animate__animated animate__fadeInUp">Sono un giornalista professionista, specializzato
-      in comunicazione politica e
-      istituzionale. Laureato in scienze della comunicazione all’Università degli studi di Cassino, ho seguito corsi di
-      aggiornamento alla LUISS Management e alla SDA Bocconi.&nbsp;Ho già scritto per il quotidiano <strong
-        class="black"
-      >Libero</strong> e collaborato con <strong class="black">Il Tempo</strong>, La Notizia Giornale,
-      Romauno tv, Rttr tv, D+, Odeon tv, Telesiciliacolor-Rete 8, Teleradio del Mediterraneo, SMAU Sicilia, Mondimpresa
-      e Confindustria Sicilia, Comune di Catania, Provincia regionale di Catania.<br><br>Sono stato <strong
-        class="black"
-      >Spin doctor e ghost writer</strong> di parlamentari e
-      amministratori pubblici. Ho già redatto strategie di comunicazione per conto di imprese, istituzioni, manager e
-      personaggi pubblici. Sono stato docente a contratto di comunicazione e giornalismo per la Facoltà di Lettere e
-      filosofia dell'università di Catania. Ho collaborato con il gruppo <strong class="black">Focus management
-        school</strong> e <strong class="black">Metaconsulting</strong>. Sono autore dei volumi “Comunica da leader”,
-      “Sono solo salvinate” e “Parole di buon senso”.</p>
+    <p class="about-paragraph wow animate__animated animate__fadeInUp">Sono un giornalista professionista e mi occupo di
+      comunicazione politica e istituzionale. Laureato in scienze della comunicazione all’Università degli studi di
+      Cassino, ho seguito corsi di aggiornamento alla LUISS Management e alla SDA Bocconi. Ho già scritto per il
+      quotidiano <strong class="black">Libero</strong> e collaborato con <strong class="black">Il Tempo</strong>, La
+      Notizia Giornale, Romauno tv, Rttr tv, D+, Odeon tv, Telesiciliacolor-Rete 8, Teleradio del Mediterraneo, Regione
+      Siciliana, SMAU Sicilia, Mondimpresa e Confindustria Sicilia, Comune di Catania, Provincia regionale di Catania,
+      Azienda sanitaria provinciale di Catania.
+      <br><br>
+      Sono stato <strong class="black">Spin doctor e ghost writer</strong> di parlamentari e amministratori pubblici.
+      Ho già redatto strategie di comunicazione per conto di imprese, istituzioni, manager e personaggi pubblici. Sono
+      stato docente a contratto di comunicazione e giornalismo per la Facoltà di Lettere e filosofia dell'università di
+      Catania. Ho collaborato con il gruppo <strong class="black">Focus management school e Metaconsulting</strong>.
+      Sono autore dei volumi “Comunica da leader”, “Sono solo salvinate” e “Parole di buon senso”.</p>
   </div>
 </section>
 
@@ -36,10 +35,11 @@
   </div>
   <div class="work-textbox" fxLayout="column" fxLayoutAlign="center center">
     <p id="work-paragraph" class="wow animate__animated animate__fadeInUp">Creo contenuti per il web (social network,
-      blog, siti internet) per aziende, professionisti e
-      organizzazioni. Progetto e realizzo speech, video, info-grafiche e <strong>articoli</strong>. Svolgo <strong>consulenze</strong>
-      nel campo della comunicazione politica e istituzionale. Collaboro, in qualità di docente, con diverse
-      organizzazioni e associazioni di categoria. Mi occupo di <strong>comunicazione</strong> a 360 gradi.</p>
+      blog, siti internet) per aziende, professionisti e organizzazioni. Progetto e realizzo speech, video,
+      info-grafiche, pubblicazioni e <strong>articoli</strong>. Svolgo <strong>consulenze</strong> nel campo della
+      comunicazione politica e istituzionale.
+      Collaboro, in qualità di docente, con diverse organizzazioni e associazioni di categoria. Mi occupo di
+      <strong>comunicazione a 360 gradi</strong>.</p>
   </div>
 </section>
 
@@ -51,8 +51,8 @@
            alt="Coaching">
       <button class="btn shortcut-btn" (click)="coachingNavigate()">COACHING</button>
       <h2 class="shortcut-title"><strong>Public Speaking</strong></h2>
-      <p class="shortcut-paragraph">Lezioni individuali con metodo innovativo, piacevole ed efficace. Esercitazioni
-        pratiche e simulazioni reali davanti a microfono e telecamera.</p>
+      <p class="shortcut-paragraph">Lezioni individuali (anche on line) e di gruppo. Percorsi personalizzati con
+        esercitazioni pratiche e simulazioni reali davanti a microfono e telecamera.</p>
     </div>
     <div class="wow animate__animated animate__zoomIn" fxLayout="column" fxLayoutAlign="space-around center">
       <img class="shortcut-circle" src="https://antonellozitelli.it/assets/images/circle-coaching.webp"
@@ -100,6 +100,7 @@
   </div>
 </section>
 
-<footer class="footer" fxLayout="row" fxLayoutAlign="center center">
-  <p id="footer-text">Copyright © {{year}} Antonello Zitelli <br> P.IVA: 05793710871</p>
+<footer class="footer" fxLayout="column" fxLayoutAlign="center center">
+  <p class="footer-text" id="copyright">Copyright © {{year}} Antonello Zitelli <br> P.IVA: 05793710871</p>
+  <p class="footer-text" id="privacy-link" routerLink="privacy-policy">Privacy Policy</p>
 </footer>
